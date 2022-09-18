@@ -1,0 +1,235 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+    
+    background: linear-gradient(to right, rgb( 0 0 0 /.5),rgb( 0 0 0 /.5)) ,url(../assets/imagenes/ba1.jpg); 
+    background-size: cover;
+    background-position: center;
+    width:  100vw;
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: aliceblue;
+    font-size: 1.3em;
+    justify-content: flex-start;
+}
+img{
+    margin-left: 50px;
+    padding:auto 0;
+}
+.letra{
+    font-size: 1.4rem;
+}
+.cabecera{
+    height: 18%;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(49, 47, 47);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    padding-left: 25%;
+    
+}
+li{
+    text-align-last: center;
+    list-style: none;
+    display: inline-block;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: rgb(238, 227, 227);
+    text-shadow: rgb(255, 254, 254);
+    font-size: 0.85em;
+    padding: 0 0.2vmax;
+
+}
+.bsas{
+    text-align: right;
+    font-size: 1.2rem;
+}
+.header-hijo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    padding-right: 80px;
+}
+.boton1{
+border-radius: 5px;
+border: 1px solid rgb(189, 180, 180);
+padding: 8px 12px;
+}
+.boton2{
+border-radius: 5px;  
+background-color:rgb(50, 185, 84) ;
+padding: 10px;
+}
+
+.main-hijo{
+    justify-content: left;   
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main{
+    
+    flex-wrap: wrap;
+}
+.texto-tarjeta{
+    text-align: left;
+    width: 290px;
+    height: min-content; 
+    font-size: 12px;   
+}
+.tarjeta{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 7px 7px;
+    align-items: left; 
+    border: .5px solid rgb(216, 207, 207);
+}
+.tarjeta img{
+    margin: 0;  
+}
+.titulo{
+    text-align: center;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+h5, h2{
+    margin: 0;
+    padding: 5px;
+}
+h5{
+    padding-top: 10px;
+    color: rgb(158, 156, 154);
+}
+h3{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.tarjetas{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+.botonitos a, .botonitos1 a{
+    border-radius: 5px ;
+
+}
+
+.negocio{
+    background-color: magenta;
+    color: white;
+}
+.StartUp{
+    background-color: rgb(17, 228, 243);
+    color: white;
+
+}
+.java{
+    background-color: rgb(248, 248, 54);
+    color: black;
+    font-weight: bold;
+
+}
+.react{
+background-color: rgb(17, 225, 240);
+text-align: center;
+color: white;
+}
+.honolulu{
+    display: flex;
+    width: 100vw;
+    margin: 20px;
+
+}
+.honolulu-img{
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.honolulu img{
+    margin: 0;
+    padding: 0;
+}
+.honolulu-box{
+    width: 50vw;
+    background-color: rgb(73, 72, 72);
+    color: white;
+    padding-left: 10px;
+    border: 1px solid grey;
+}
+.honolulu-texto{
+    font-size: .9rem;
+    text-align: left;
+}
+.boton-honolulu{
+    border-radius: 5px;
+    border: 1px solid rgb(189, 180, 180);
+    padding: 8px 12px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    background-color: rgb(68, 68, 104);
+    width: 100%;
+}
+.titulo-form{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 20px;
+    width: 100vw;
+   
+}
+.form{
+width: 300px;
+padding: 10px;
+border-radius: 7px;
+}
+textarea{
+    display: block;
+    width: 650px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+.enviar{
+    background-color: rgb(99, 236, 99);
+    color: white;
+    border: 0ch;
+    border-radius: 7px;
+    height: 50px;
+}
+footer a{
+    width: 100px;
+    padding: 30px;
+    height: 100px;
+}
