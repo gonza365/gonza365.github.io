@@ -169,7 +169,7 @@ color: white;
     display: flex;
     flex-direction: row;
     color: white;
-    /*border-top: 2px solid rgb(133, 128, 128);*/
+    border-top: 2px solid rgb(133, 128, 128);
 }
 .honolulu-box{
     width: 50%;
@@ -177,7 +177,7 @@ color: white;
     line-height: 25px;
     padding-left: 20px;
     font-size: 1rem;
-    /*border-left: 2px solid rgb(133, 128, 128);*/
+    border-left: 2px solid rgb(133, 128, 128);
     margin-bottom: 4px;
 }
 .honolulu-img{
