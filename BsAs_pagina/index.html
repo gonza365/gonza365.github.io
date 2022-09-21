@@ -10,11 +10,13 @@
   <body>
     <header>
       <div class="cabecera">
+      <div class="cabecera1">
         <img src="../assets/imagenes/apple-touch-icon.png" alt="logo"
-        width="90vmax" height=50vmax"/>
+        width="90vmax" height="50vmax"/>
         <p class="letra">Conf Bs As</p>
-
-        <nav>
+    </div>
+    <div class="cabecera2">
+        <nav >
           <ul>
             <li><a href="#" style="color: white">La conferencia</a></li>
             <li><a href="#">Los oradores</a></li>
@@ -24,7 +26,7 @@
           </ul>
         </nav>
       </div>
-
+    </div>
       <div class="header-hijo">
         <h1>Conf Bs As</h1>
         <p class="bsas">
@@ -51,10 +53,11 @@
           <img
             src="../assets/imagenes/steve.jpg"
             alt="Steve Jobs SONRIENDO"
-            width="300px"
+            width="320px"
             height="300px"
             load="lazy"
           />
+          <div class="tarjet">
           <div class="botonitos">
             <a href="#" class="java">Javascript</a>
             <a href="#" class="react">React</a>
@@ -63,39 +66,44 @@
           <p class="texto-tarjeta">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus,
             esse? Consequuntur magnam et eum vel impedit reiciendis excepturi
-            quos tenetur libero aperiam explicabo, totam facere dolores quo
-            temporibus autem aut?
+            quos tenetur libero aperiam explicabo
           </p>
+        </div>
         </div>
 
         <div class="tarjeta">
           <img
             src="../assets/imagenes/bill.jpg"
             alt="Bill Gates hablando"
-            width="300px"
-            loading="lazy"
-          />
-          <div class="botonitos">
-            <a href="#" class="java">Javascript</a>
-            <a href="#" class="react">React</a>
-          </div>
-          <h3>Bill Gates</h3>
+            width="320px"
+            height="300px"
+            loading="lazy"/>
 
-          <p class="texto-tarjeta">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-            aliquam laborum tenetur, unde similique, animi nesciunt quod in
-            quibusdam voluptates nobis ad ratione provident alias cumque rem
-            consectetur voluptas possimus.
-          </p>
-        </div>
+          <div class="tarjet">
+            <div class="botonitos">
+              <a href="#" class="java">Javascript</a>
+              <a href="#" class="react">React</a>
+            </div>
+            <h3>Bill Gates</h3>
+  
+            <p class="texto-tarjeta">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              aliquam laborum tenetur, unde similique, animi nesciunt quod in
+              quibusdam voluptates nobis ad ratione 
+            </p>
+          </div>
+          </div>
+          
 
         <div class="tarjeta">
           <img
             src="../assets/imagenes/ada.jpeg"
             alt="Ada Lovelace de perfil "
-            width="300px"
+            width="320px"
+            height="300px"
             loading="lazy"
           />
+          <div class="tarjet">
           <div class="botonitos1">
             <a href="#" class="negocio">Negocio</a>
             <a href="#" class="StartUp">StartUp</a>
@@ -104,16 +112,16 @@
           <p class="texto-tarjeta">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             nam ad, voluptates unde nulla cumque esse officiis nemo. Ducimus
-            dignissimos impedit, unde quod cum voluptatem quos ullam mollitia
-            harum soluta.
+            dignissimos impedit, unde quod cum voluptatem 
           </p>
         </div>
+      </div>
       </div>
     </main>
 
     <section class="honolulu">
       <div class="honolulu-img">
-        <img src="../assets/imagenes/honolulu.jpg" alt="vista aérea de la ciudad de Honolulú" width="840px" />
+        <img src="../assets/imagenes/honolulu.jpg" alt="vista aérea de la ciudad de Honolulú" width="100%" />
       </div>
       <div class="honolulu-box">
         <h3>Bs As - Octubre</h3>
@@ -130,27 +138,30 @@
     </section>
     <div class="titulo-form">
       <h4>CONVIÉRTETE EN UN  </h4>
-      <h2>ORADOR</h2>
-      <H5>Anótate como orador para dar una <a href="">charla ignite</a>.Coéntanos sobre qoé quieres hablar</H5>
+      <h2 >ORADOR</h2>
+      <H5>Anótate como orador para dar una <a href="#" class="charla">charla ignite</a>.Coéntanos sobre qué quieres hablar</H5>
     </div>
     
       <form action="" >
         <div class="formulario">
         <input type="text" placeholder="Nombre" class="form">
         <input type="text" placeholder="Apellido" class="form">
+        
       </div>
         <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué tema quieres hablar?"></textarea>
         <input type="submit" class="enviar">
       </form>
     
     <footer>
-      <a href="#">Preguntas frecuentes</a>
-      <a href="#">Contáctenos</a>
-      <a href="#">Prensa</a>
-      <a href="#">Conferencias</a>
-      <a href="#">Términos y condiciones</a>
-      <a href="#">Privacidad</a>
-      <a href="#">Estudiantes</a>
+      <ul>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Contáctenos</a></li>
+        <li><a href="#">Prensa</a></li>
+        <li><a href="#">Conferencias</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Estudiantes</a></li>
+      </ul>
     </footer>
   </body>
 </html>
