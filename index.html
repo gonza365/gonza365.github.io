@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/botonera.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="../proyecto_codoacodo/images/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/botonera.css">
     <title>curso de PHP</title>
 </head>
 <body>
     <!--Hola esto es un comentario y va entre dos guiones-->  
-    <h1>Curso de PHP</h1>
-    <h2>OPCIONES</h2>
-    <ul>
-        <li><a href="./presentacion/index.html">Presentación</a></li>
-        <li><a href="./BsAs_pagina/index.html">Página Bs As</a></li>
-        <li><a href="#">todavia nada</a></li>
-        <li><a href="#">aca menos</a></li>
-    </ul>
+    <div class="titulo">
+      <h1 class="d-flex justify-content-center">Curso de PHP</h1>
+    <h2 class="fs-1 d-flex justify-content-center">Codo A Codo</h2>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./presentacion/index.html">Presentacion</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Bs As Página
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./BsAs_pagina/con-bootstrap/index1.html">Con Bootstrap</a></li>
+                  <li><a class="dropdown-item" href="./BsAs_pagina/sin_bootstrap/index.html">Sin Bootstrap</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex ms-3">
+          <img src="./images/favicon_io/favicon-32x32.png" alt="logo" class="align-self-flex-end me-3 ">
+        </div>
+      </nav>
     <p>Lorem ipsum dolor sit amet consectetur, <b>adipisicing elit. Accusamus ullam quam exercitationem enim vitae illum esse earum.</b> Laudantium eveniet id accusantium, cupiditate vel quas dicta suscipit eius voluptas adipisci voluptate</p>
     <img src="https://picsum.photos/300?random1" alt="perrito">
     <img src="https://picsum.photos/300?random2" alt="ptro">
@@ -25,5 +52,6 @@
     <div>
         <!--el div es una etiqueta en bloque que engloba los elementos para hacerlos reaccionar de una determinada manera o darle atributos en conjunto-->
     </div>
+    <script src="./bootstrap-5.0.2-dist/"></script>
 </body>
 </html>

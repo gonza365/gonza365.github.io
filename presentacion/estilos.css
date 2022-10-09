@@ -1,8 +1,6 @@
 body{
    
-    font-family:  Script MT, Brush Script Std, cursive;
-    font-size: 20px;
-    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(../images/background.jpg);
     text-shadow : 2px 2px #E6E1DC;
 }
@@ -19,18 +17,8 @@ header{
     font-size: 30px;
     text-align: center;
     background-color: #D4B224;
-    position: sticky;
     width: 100%;
-    height: 120px;
-    position: fixed;
-   
-    
-     
-    
-    
-    
-    
-    
+    height: 120px;    
 }
 section{
     padding-bottom: 200px;
@@ -55,26 +43,25 @@ p{
     text-align: left;
     display: inline-block;
     background-color: none;
-    font-size: 39px;
-    margin-top: 0%;
-    margin-right:10px;
-    margin-left : 20px}
-
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+}
 .botones li a {
     text-decoration: none;
     padding-left: 150px;
     padding-right: 150px;
     height: 50px;
     padding-bottom: 0%;
-    
     border-color:2px #665A0D ;
+    color: rgba(218, 216, 212, 0.856);
+    text-shadow:  7px 1px rgb(100, 95, 95) ;
     
-
-
 }
 .botones{
     display: inline-block;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    border-radius: 7px 0px 0px 7px ;
     
     
 }
@@ -82,7 +69,7 @@ p{
 display: inline;
 margin-left: 0;
 margin-right: 0;
-border-radius:  2px 2px 2px 2px  #9b811a;
+
 }
 .nav{
     display: inline;
@@ -97,8 +84,8 @@ border-radius:  2px 2px 2px 2px  #9b811a;
 .yo{
     margin-top:0px;
 }
-ul li :hover{
-    background-color:#9b811a;
+li :hover a {
+    font-size: 2rem;
     border-radius: 7px 7px 7px 7px;
 
 }
@@ -109,10 +96,20 @@ ul li :hover{
 }
 .icon-social a img{
     
-    display: block;
+    display: flex;
     width: 50px;
     height: 50px;
     padding-top: 10px;
-    align-items: flex-end;
+    flex-direction: row;
+    
+    
+}
+.icon-tw, .icon-fb, .icon-inst, .icon-gmail{
+    text-decoration: none;
+    flex-direction: row;
+
+
+}
+.icon-tw a, .icon-fb a, .icon-inst a, .icon-gmail a{
     
 }
