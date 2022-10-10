@@ -330,10 +330,10 @@ footer a{
         padding-bottom: 10px;
     }
     .carousel-control-prev, .carousel-control-next{
-        height: 50%;
+        height: 45%;
     }
     .header-hijo{
-        height: 100vh;
+        height: 60vh;
     }
 
     .formulario{
