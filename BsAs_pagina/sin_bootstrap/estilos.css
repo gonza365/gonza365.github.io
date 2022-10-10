@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(to right, rgb( 0 0 0 /.5),rgb( 0 0 0 /.5)) ,url(../../assets/imagenes/ba1.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.cabecera{
+    background-color: rgb(49, 47, 47);
+    display: flex;
+    color: white;
+    padding: 0 ;
+    height: 20%;
+    font-size: 1rem;
+}
+.cabecera1{
+    display: flex;
+    width:40% ;
+    margin-left: 5%;
+    padding: 10px ;
+}
+/*botonera*/
+.cabecera2{  
+    width: 60%;
+    margin-right: 7%;
+}
+.letra{
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+nav{
+    padding-top: 10px;
+}
+li{
+    display: inline-block;
+    padding: 5px 5px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    color: rgb(168, 162, 162);
+}
+/*botonera*/
+/*header*/
+.header-hijo{
+    height: 550px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+}
+h1{
+  margin: 0;
+  padding: 0%;
+}
+.bsas{
+    width: 50%;
+    font-size: 1.26rem;
+    text-align: right;
+    margin: 0;
+    padding: 5px;
+    word-spacing: normal;
+    line-height: 25px;
+}
+.boton1 a, .boton2 a{
+    display: inline-block;
+}
+.boton1, .boton2{
+    border-radius: 7px;
+    border: 1px solid rgb(189, 180, 180);
+    padding: 8px 15px;
+    color: white;
+    font-size: 1.20rem;
+}
+.boton2{
+    background-color:rgb(50, 185, 84) ;
+    color: white;
+}
+/*header*/
+/*cards*/
+.titulo{
+    display: block;
+    text-align: center;
+    padding: 4px;
+    color:rgb(63, 60, 60);
+    padding: 0;
+    margin: 0;
+}
+.titulo h5 h5{
+    color: rgb(90, 88, 88);
+    padding: 0;
+    margin-bottom: 0;
+    width: fit-content;
+}
+.titulo h2{
+    font-size: 1,6rem;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;   
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.tarjet {
+    display: flex;
+    flex-direction: column;
+    align-items: left ;
+    height: 180px;
+    width: 66%;
+    border: .5px solid rgb(216, 207, 207);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+.texto-tarjeta{
+    text-align: left;
+    font-size: 1rem;
+}
+.botonitos, .botonitos1{
+    height: 5px;
+}
+.botonitos a, .botonitos1 a{
+    border-radius: 6px ;
+    padding: 1px 3px;
+}
+.negocio{
+    background-color: rgb(133, 119, 119);
+    color: white;
+}
+.StartUp{
+    background-color: rgb(190, 24, 74);
+    color: white;
+}
+.java{
+    background-color: rgb(236, 236, 65);
+    color: black;
+}
+.react{
+background-color: rgb(50, 221, 233);
+text-align: center;
+color: white;
+}
+/*cards*/
+.honolulu{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border-top: 2px solid rgb(133, 128, 128);
+}
+.honolulu-box{
+    width: 50%;
+    background-color: rgb(48, 46, 46);
+    line-height: 25px;
+    padding-left: 20px;
+    font-size: 1rem;
+    border-left: 2px solid rgb(133, 128, 128);
+    /*margin-bottom: 4px;*/
+}
+.honolulu-img{
+    width: 50%;
+    height: auto;
+}
+.honolulu h3{
+    font-size: 1.8rem;
+}
+.boton-honolulu{
+    border-radius: 5px;
+    border: 1px solid rgb(189, 180, 180);
+    padding: 8px 12px;
+}
+.titulo-form{
+    text-align: center;
+    color: rgb(95, 90, 90);
+    width: 100%;
+    display: inline-block;
+}
+.titulo-form h4{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.titulo-form h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding: 0;
+    color: rgb(70, 66, 66);
+}
+.titulo-form h5{
+    margin: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 20px;
+    width: 100%;
+}
+.form{
+width: 300px;
+padding: 10px;
+border-radius: 7px;
+}
+textarea{
+    display: block;
+    width: 650px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+.enviar{
+    background-color: rgb(99, 236, 99);
+    color: white;
+    border-radius: 7px;
+    height: 50px;
+}
+.charla{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: black;
+}
+footer{
+    height: 50px;
+    background-color: rgb(32, 67, 83);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer a{
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    color: rgb(187, 178, 178);
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

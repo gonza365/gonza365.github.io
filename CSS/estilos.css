@@ -169,7 +169,11 @@ color: white;
     padding-left: 20px;
     font-size: 1rem;
     border-left: 2px solid rgb(133, 128, 128);
+<<<<<<< HEAD:CSS/estilos.css
     /*margin-bottom: 4px;*/
+=======
+    margin-bottom: 4px;
+>>>>>>> 64634074d6d6f43b9fbdfcb19236fb89be4df99e:BsAs_pagina/estilos.css
 }
 .honolulu-img{
     width: 50%;
