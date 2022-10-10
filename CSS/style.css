@@ -171,7 +171,7 @@ form{
     width: 100%;
 }
 .form{
-    width: 400px;
+    width: 49%;
     padding: 10px;
     border-radius: 5px;
 }
@@ -277,20 +277,22 @@ footer a{
         display: flex;
         flex-direction: column;
         width: 100vw;
-        justify-content: space-between;
         align-items: center !important;
     }
     input{
         justify-content: space-between;
     }
-    form{
-        align-items: center;
-        width: 100vw;
+    .form{
         
-
+        align-items: center;
+        width: 80vw;
+       margin-bottom: 10px;
     }
     .texta{
-        width: 100vw;
+        width: 80vw;
+    }
+    h6{
+        margin-left: 10%;
     }
     footer ul{
         display: flex;
@@ -300,6 +302,10 @@ footer a{
        width: 100vw;
        height: 30px;
     }
+    .enviar{
+        width: 100%;
+    }
+
  }
  @media (max-widht: 768px){
      .honolulu-texto{
