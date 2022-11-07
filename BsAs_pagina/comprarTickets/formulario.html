@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/imagenes/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/imagenes/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/imagenes/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../assets/imagenes/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../comprarTickets/estilos.css" />
+    <title>Comprar tickets</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navsup navbar-expand-lg navbar-light py-3">
+        <div class="container-fluid">
+          <a class="icono" href="../con-bootstrap/index1.html"
+            ><img
+              src="../../assets/imagenes/apple-touch-icon.png"
+              width="70px"
+              height="50px"
+            />Conf Bs As</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../con-bootstrap/index1.html"
+                >La Conferencia</a
+              >
+              <a class="nav-link" href="../con-bootstrap/index1.html#oradores"
+                >Los Oradores</a
+              >
+              <a class="nav-link" href="#">El lugar y la fecha</a>
+              <a class="nav-link" href="#">Conviértete en orador</a>
+              <a class="nav-link btn-1" href="formulario.html"
+                >Comprar Tickets</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="formulario" >
+      <div class="desc">
+        <div class="desc1">
+          <h4>Estudiante</h4>
+          <p class="textito">Tienen un descuento</p>
+          <span class="py-2">80%</span>
+          <p class="doc pt-1">*presentar documentación</p>
+        </div>
+        <div class="desc2">
+          <h4>Traineé</h4>
+          <p class="textito">Tienen un descuento</p>
+          <span class="py-2">50%</span>
+          <p class="doc pt-1">*presentar documentación</p>
+        </div>
+        <div class="desc3">
+          <h4>Junior</h4>
+          <p class="textito">Tienen un descuento</p>
+          <span class="py-2">15%</span>
+          <p class="doc pt-1">*presentar documentación</p>
+        </div>
+      </div>
+      <div class="subt">
+        <h6>VENTA</h6>
+        <h2>VALOR DEL TICKET $200</h2>
+      </div>
+      <br>
+      <form action="" id="formulario">
+        <div>
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" id="nombre" aria-label="First name" value="asdasd" >
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" id="apellido" aria-label="Last name" value="asdasds">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div >
+            <input type="text"  class="form-control my-3" placeholder="correo electrónico" id="correo" value="cabezayredondos@gmail.com">
+          </div>
+        </div>
+
+        <div>
+          <label for="">Cantidad</label>
+          <input class="form-control" type="text" id="cantidad" aria-label="default input example" >
+          <label for="">Categoría</label>
+          <select class="form-select" id="descuento" aria-label="Default select example">
+            <option selected value="0" id="cat">Sin categoría</option>
+            <option id="cat" value="1">Estudiante</option>
+            <option id="cat" value="2">Trainee</option>
+            <option id="cat" value="3">Junior</option>
+          </select>
+        </div>
+        <input type="text" value="total a pagar $"  id="total">
+        <div class="boton">
+          <button type="reset"  value="Borrar">Borrar</button>
+          <button type="button"  onclick="calculo()" value="Resumen">Resumen</button>
+
+        </div>
+        
+        
+
+      </form>
+      </section>
+      <script src="../../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+      <script src="./formulario.js"></script>        
+      </body>
+</html>

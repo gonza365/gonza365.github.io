@@ -1,0 +1,110 @@
+.formulario{
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.desc{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 75vw;
+}
+.desc1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 123, 255);
+    padding: 40px;
+    margin: 6px;
+    
+}
+.desc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(23, 162, 184);
+    padding: 40px;
+    margin: 6px;
+}
+.desc3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 193, 7);
+    padding: 40px;
+    margin: 6px;
+}
+.doc{
+    font-size: 12px;
+    
+}
+section span{
+    font-weight: bold;
+}
+.textito{
+    font-weight: bold;
+    color: rgb(148, 143, 143);
+}
+.subt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.subt h6{
+    align-content: center;
+}
+.formul{
+    width:55vw !important;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.compra{
+    width:100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.seleccion{
+    position: relative;
+    width: 54vw;
+    margin-top: 0%;
+
+}
+.resumen{
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin-left:auto;
+    margin-right: auto;
+}
+.boton {
+    padding:5px;
+    width: 60%;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn{
+    width: 48%;
+    background-color: green;
+}
+.total{
+    background-color: rgba(220, 220, 248);
+}
