@@ -1,0 +1,31 @@
+img{
+    height: 90vh !important;
+    position: relative;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+}
+.imagen{
+    width: 60vw;
+    padding-left: 5px;
+
+}
+.container p{
+    display: flex;
+   
+    text-align: right;
+    align-items: center;
+   
+}
+.container{
+    background-color: rgb(138, 135, 135);
+}
+.btn-php li{
+    display: inline-block;
+    text-decoration: none;
+}

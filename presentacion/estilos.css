@@ -13,13 +13,7 @@ h1{
     
 }
 
-header{
-    font-size: 30px;
-    text-align: center;
-    background-color: #D4B224;
-    width: 100%;
-    height: 120px;    
-}
+
 section{
     padding-bottom: 200px;
 
@@ -39,42 +33,16 @@ section{
 ;
 }
 p{
-    width: 600px;
+    width: 90%;
     text-align: left;
     display: inline-block;
     background-color: none;
     font-size: 2.2rem;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
-.botones li a {
-    text-decoration: none;
-    padding-left: 150px;
-    padding-right: 150px;
-    height: 50px;
-    padding-bottom: 0%;
-    border-color:2px #665A0D ;
-    color: rgba(218, 216, 212, 0.856);
-    text-shadow:  7px 1px rgb(100, 95, 95) ;
-    
-}
-.botones{
-    display: inline-block;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    border-radius: 7px 0px 0px 7px ;
-    
-    
-}
-.botones li{
-display: inline;
-margin-left: 0;
-margin-right: 0;
 
-}
-.nav{
-    display: inline;
-    height: 50px;
-}
 .titulo{
    
     padding-top: 0px;
@@ -84,7 +52,7 @@ margin-right: 0;
 .yo{
     margin-top:0px;
 }
-li :hover a {
+ul li a:hover {
     font-size: 2rem;
     border-radius: 7px 7px 7px 7px;
 
@@ -110,6 +78,7 @@ li :hover a {
 
 
 }
-.icon-tw a, .icon-fb a, .icon-inst a, .icon-gmail a{
+
+@media(max-width 560px){
     
 }

@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 .titulo{
 	background-color: linear-gradient (to right rgb(88, 88, 81, 0.5), rgba( to left 232, 255, 24, 0.979), url(../assets/imagenes/favicon-16x16.png)) !important;
 }
-=======
+
 body{
 	font-family:calibri;
 	background-image:url(iguana.gif);
@@ -10,4 +10,3 @@ body{
 	font-style:bold;
 	font-size:15px;
 }
->>>>>>> 64634074d6d6f43b9fbdfcb19236fb89be4df99e
