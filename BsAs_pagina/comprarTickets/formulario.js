@@ -6,11 +6,42 @@ categoria.addEventListener('change',newFunction);
 let categoriaValor=newFunction();
 let total= document.getElementById('total');
 let desc= 0;
+function calculo(){
+    
+    switch (parseInt(categoria.options[categoria.selectedIndex].value) ) {
+     case 1:
+        desc= 0.85
+        total.value= total.value + (parseInt(200)*parseFloat(desc)*(cantidad.value));
+         break;
+     case 2:
+        desc=0.5
+        total.value= total.value + (parseInt(200)*parseFloat(desc)*(cantidad.value));
+         break;
+     case 3:
+        desc= 0,15
+        total.value= total.value + (parseInt(200)*parseFloat(desc)*(cantidad.value));
+        
+         break;
+    
+     default:
+        desc=1
+        total.value= total.value + (parseInt(200)* parseFloat(desc)*(cantidad.value));
+         
+         break;
+    }
+    
+    
+    return;
 
+     
+ };
+function clearForm(){
+    document.getElementById("formulario").reset();
+}
 function newFunction() {
     
     
-    return console.log(categoria.options[categoria.selectedIndex].value);
+    console.log(categoria.options[categoria.selectedIndex].value);
 }
 
 function validar(){
@@ -29,7 +60,7 @@ function validar(){
         if (Number.isNaN(parseInt(cantidad.value))) {
             alert('Debe ingresar una cantidad de tickets válida' );
         } else {if (cantidad.value<0 ){
-            alert('La cantidad ingresada es incorrecta. Intente ingresar un número válido (No puede ser negativo))')
+            alert('La cantidad ingresada es incorrecta. Intente ingresar un número válidos(No puede ser negativo))')
             
         } else {
             calculo();
@@ -43,36 +74,3 @@ function validar(){
        }}}};
        
 };
-
-function calculo(){
-    
-    switch (parseInt(categoria.options[categoria.selectedIndex].value) ) {
-     case 1:
-        desc= 0.85
-        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value));
-         break;
-     case 2:
-        desc=0.5
-        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value));
-         break;
-     case 3:
-        desc= 0,15
-        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value));
-        
-         break;
-    
-     default:
-        desc=1
-        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value))
-         
-         break;
-    }
-    
-    
-    return;
-
-     
- };
-function clearForm(){
-    document.getElementById("formulario").reset();
-}
