@@ -73,6 +73,15 @@
         </div>
       </nav>
     </header>
+    <div class="offcanvas offcanvas-start show w-50%" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header ">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Hola Gise!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Espero que cuando entres me haya dado el tiempo de poder solucionar los problemas que tuve. El escaso tiempo que le pude dedicar me fue insuficiente, aunque espero que cuando estés evaluándolo se me hayan resuelto 
+      </div>
+    </div>
     <section class="formulario" >
       <div class="desc">
         <div class="desc1">
@@ -103,10 +112,10 @@
         <div>
           <div class="row g-3">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" id="nombre" aria-label="First name" value="asdasd" >
+              <input type="text" class="form-control" placeholder="Nombre" id="nombre" aria-label="First name" value="asdasd"  >
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" id="apellido" aria-label="Last name" value="asdasds">
+              <input type="text" class="form-control" placeholder="Apellido" id="apellido" aria-label="Last name" value="asdasd">
             </div>
           </div>
         </div>
@@ -120,17 +129,17 @@
           <label for="">Cantidad</label>
           <input class="form-control" type="text" id="cantidad" aria-label="default input example" >
           <label for="">Categoría</label>
-          <select class="form-select" id="descuento" aria-label="Default select example">
-            <option selected value="0" id="cat">Sin categoría</option>
+          <select class="form-select" id="categoria" onchange="" aria-label="Default select example">
+            <option  id="cat" value="0">Sin categoría</option>
             <option id="cat" value="1">Estudiante</option>
-            <option id="cat" value="2">Trainee</option>
+            <option  id="cat" value="2">Trainee</option>
             <option id="cat" value="3">Junior</option>
           </select>
         </div>
         <input type="text" value="total a pagar $"  id="total">
         <div class="boton">
-          <button type="reset"  value="Borrar">Borrar</button>
-          <button type="button"  onclick="calculo()" value="Resumen">Resumen</button>
+          <button type="button" onclick="clearForm()" value="Borrar">Borrar</button>
+          <button type="button" id="resumen" onclick="validar()" value="Resumen">Resumen</button>
 
         </div>
         

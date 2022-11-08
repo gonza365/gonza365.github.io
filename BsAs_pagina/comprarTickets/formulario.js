@@ -1,78 +1,78 @@
-
-let descuento=document.getElementById('descuento');
 let cantidad= document.getElementById('cantidad');
-let categoria = document.getElementById('cat');
+let resumen= document.getElementById('resumen')
+resumen.addEventListener('click', validar);
+let categoria= document.getElementById('categoria');
+categoria.addEventListener('change',newFunction);
+let categoriaValor=newFunction();
+let total= document.getElementById('total');
+let desc= 0;
 
+function newFunction() {
+    
+    
+    return console.log(categoria.options[categoria.selectedIndex].value);
+}
 
-function calculo() {
+function validar(){
     if (nombre.value=="") {
         alert("debe llenar el campo Nombre");
-        nombre.classlist.add("")
+        
     } else {if (apellido.value=="") {
         alert("debe llenar el campo Apellido")
-        apellido.focus()
+        
        
         
     } else {if (correo.value=="") {
         alert("debe llenar el campo correo")
         
-    } else  {if (validarCorreo()==true) {
-        validarCantidad()
-        
-    } else {
-        
-    }
-      
-    } 
-        
-    
-       }
-    }
-        
-    }
-        
-    
-    function validarCorreo(){
-        if (/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(correo.value)){
+    } else  { if  (/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(correo.value)){
+        if (Number.isNaN(parseInt(cantidad.value))) {
+            alert('Debe ingresar una cantidad de tickets válida' );
+        } else {if (cantidad.value<0 ){
+            alert('La cantidad ingresada es incorrecta. Intente ingresar un número válido (No puede ser negativo))')
             
-             
-            let prod=0
+        } else {
+            calculo();
+        }
+           
+        }
 
-            switch (categoria){
-                case 1:
-                    desc= 0.85  
-                    prod=(200*desc*cantidad.value);
-                    console.log(prod)          
-                    break;
-                case 2:
-                    desc= 0.50
-                    prod=200*desc*cantidad.value
-                    console.log(prod) 
-                    break;
-                case 3:
-                    desc= 0.15
-                    prod=200*desc*cantidad
-                    console.log(prod) 
-                    break;
-                default:
-                    prod=200;
-                    console.log(prod)
-                    console.log("no es asi") ;              
-                         break;
-               }
-                         
-           } else {
-            alert("La dirección de email es incorrecta.")
-            
+
+       } else {
+        alert("La dirección de email es incorrecta.");
+       }}}};
+       
+};
+
+function calculo(){
     
-               }    }
-      
-       
-       
+    switch (parseInt(categoria.options[categoria.selectedIndex].value) ) {
+     case 1:
+        desc= 0.85
+        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value));
+         break;
+     case 2:
+        desc=0.5
+        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value));
+         break;
+     case 3:
+        desc= 0,15
+        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value));
+        
+         break;
+    
+     default:
+        desc=1
+        total.value= total.value + (parseInt(200)*parseInt(desc)*(cantidad.value))
+         
+         break;
+    }
+    
+    
+    return;
+
      
-                
-   
-
-
-   /*if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
-        alert("La dirección de email " + valor + " es correcta.");*/
+ };
+function clearForm(){
+    document.getElementById("formulario").reset();
+}
