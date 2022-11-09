@@ -22,7 +22,7 @@
     align-items: center;
     border: 2px solid rgb(0, 123, 255);
     padding: 40px;
-    margin: 6px;
+    margin: 5px;
     
 }
 .desc2{
@@ -32,7 +32,7 @@
     align-items: center;
     border: 2px solid rgb(23, 162, 184);
     padding: 40px;
-    margin: 6px;
+    margin: 5px;
 }
 .desc3{
     display: flex;
@@ -41,7 +41,7 @@
     align-items: center;
     border: 2px solid rgb(255, 193, 7);
     padding: 40px;
-    margin: 6px;
+    margin: 5px;
 }
 .doc{
     font-size: 12px;
@@ -65,7 +65,7 @@ section span{
     align-content: center;
 }
 .formul{
-    width:55vw !important;
+    width:60vw !important;
     margin-left: auto;
     margin-right: auto;
     
@@ -78,11 +78,32 @@ section span{
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.seleccion{
-    position: relative;
-    width: 54vw;
+.cancat{
+    
+    width: 50vw;
     margin-top: 0%;
-
+    display: inline;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;    
+}
+.cantidad{
+    margin: 0 ;
+    width: 300px !important;
+   display: flex;
+    flex-direction: column;}
+input .cantidad{
+    width: 30vw !important;
+    
+}
+.categoria{
+    width: 46%;
+    height: 25px !important;
+    display: flex;
+    flex-direction: column;
+}
+select .categoria{
+    height: 50px !important;
 }
 .resumen{
     display: flex;
@@ -93,18 +114,24 @@ section span{
 }
 .boton {
     padding:5px;
-    width: 60%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 .botones{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly !important;
     width: 100%;
 }
 .btn{
     width: 48%;
-    background-color: green;
+    background-color: rgb(151, 201, 62);
+    color: rgb(255, 247, 180);
 }
-.total{
-    background-color: rgba(220, 220, 248);
+.Total{
+    background-color: rgb(220, 229, 255);
+}
+.correo{
+    margin-bottom: 5px !important;
 }

@@ -73,16 +73,29 @@
         </div>
       </nav>
     </header>
-    <div class="offcanvas offcanvas-start show w-50%" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-      <div class="offcanvas-header ">
+    <div
+      class="offcanvas offcanvas-start show w-50%"
+      tabindex="-1"
+      id="offcanvas"
+      aria-labelledby="offcanvasLabel"
+    >
+      <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasLabel">Hola Gise!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="offcanvas-body">
-        Espero que cuando entres me haya dado el tiempo de poder solucionar los problemas que tuve. El escaso tiempo que le pude dedicar me fue insuficiente, aunque espero que cuando estés evaluándolo se me hayan resuelto 
+        Espero que cuando entres me haya dado el tiempo de poder solucionar los
+        problemas que tuve. El escaso tiempo que le pude dedicar me fue
+        insuficiente, aunque espero que cuando estés evaluándolo se me hayan
+        resuelto
       </div>
     </div>
-    <section class="formulario" >
+    <section class="formulario">
       <div class="desc">
         <div class="desc1">
           <h4>Estudiante</h4>
@@ -107,47 +120,103 @@
         <h6>VENTA</h6>
         <h2>VALOR DEL TICKET $200</h2>
       </div>
-      <br>
+      <br />
       <form action="" id="formulario">
         <div>
           <div class="row g-3">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" id="nombre" aria-label="First name" value="asdasd"  >
+              <input
+                type="text"
+                class="form-control focus"
+                placeholder="Nombre"
+                id="nombre"
+                aria-label="First name"
+              />
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" id="apellido" aria-label="Last name" value="asdasd">
+              <input
+                type="text"
+                class="form-control focus"
+                placeholder="Apellido"
+                id="apellido"
+                aria-label="Last name"
+              />
             </div>
           </div>
         </div>
-        <div class="row mb-3">
-          <div >
-            <input type="text"  class="form-control my-3" placeholder="correo electrónico" id="correo" value="cabezayredondos@gmail.com">
+        <div class="row mb-3 correo">
+          <div>
+            <input
+              type="text"
+              class="form-control my-3 correo"
+              placeholder="correo electrónico"
+              id="correo"
+            />
           </div>
         </div>
 
-        <div>
-          <label for="">Cantidad</label>
-          <input class="form-control" type="text" id="cantidad" aria-label="default input example" >
-          <label for="">Categoría</label>
-          <select class="form-select" id="categoria" onchange="" aria-label="Default select example">
-            <option  id="cat" value="0">Sin categoría</option>
-            <option id="cat" value="1">Estudiante</option>
-            <option  id="cat" value="2">Trainee</option>
-            <option id="cat" value="3">Junior</option>
-          </select>
+        <div class="cancat">
+          <div class="cantidad">
+            <label for="">Cantidad</label>
+            <input
+              class="cantidad"
+              type="text"
+              id="cantidad"
+              aria-label="default input example"
+            />
+          </div>
+          <div class="categoria">
+            <label for="">Categoría</label>
+            <select
+              class=""
+              id="categoria"
+              class="categoria"
+              onchange=""
+              aria-label="Default select example"
+            >
+              <option value="0">Sin categoría</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+            </select>
+          </div>
         </div>
-        <input type="text" value="total a pagar $"  id="total">
+        <input type="text" value="  Total a pagar $" class="Total" id="total" />
         <div class="boton">
-          <button type="button" onclick="clearForm()" value="Borrar">Borrar</button>
-          <button type="button" id="resumen" onclick="validar()" value="Resumen">Resumen</button>
-
+          <button
+            type="button"
+            onclick="clearForm()"
+            class="btn"
+            value="Borrar"
+          >
+            Borrar
+          </button>
+          <button
+            type="button"
+            id="resumen"
+            onclick="clearTotal()"
+            class="btn"
+            value="Resumen"
+          >
+            Resumen
+          </button>
         </div>
-        
-        
-
       </form>
-      </section>
-      <script src="../../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-      <script src="./formulario.js"></script>        
-      </body>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Conferencias</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Estudiantes</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./formulario.js"></script>
+  </body>
 </html>
